@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   }
 
   const { fields } = req.body;
-  const token = process.env.AIRTABLE_TOKEN;
+  const token = process.env.AIRTABLE_PAT;
   const baseId = process.env.AIRTABLE_BASE_ID;
 
   const url = id
